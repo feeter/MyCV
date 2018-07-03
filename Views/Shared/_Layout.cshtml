@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>@ViewData["Title"]</title>
 
-        <environment exclude="Development">
+        <environment include="Development">
             <!--se ejecutan al depurar-->
             <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
             <link rel="stylesheet" href="~/css/resume.css" />
@@ -16,16 +16,13 @@
             <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
             <link href="~/lib/devicons/css/devicons.min.css" rel="stylesheet">
             <link href="~/lib/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-            <!-- Custom styles for this template -->
-            <link href="css/resume.min.css" rel="stylesheet">
         </environment>
-        <environment include="Development">
+        <environment exclude="Development">
             <!--se ejecutan al Stagin o Produccion-->
-            <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.1.1/css/bootstrap.min.css"
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
                   asp-fallback-href="~/lib/bootstrap/css/bootstrap.min.css"
                   asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-            <link rel="stylesheet" href="~/css/resume.min.css" asp-append-version="true" />
+            <link rel="stylesheet" href="@Url.Content("~/css/resume.min.css")" asp-append-version="true" />
 
             <!-- Custom fonts for this template -->
             <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -33,58 +30,52 @@
             <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
             <link href="~/lib/devicons/css/devicons.min.css" rel="stylesheet">
             <link href="~/lib/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+
         </environment>
     </head>
     <body>
-        
-        <div class="container body-content">
-            @RenderBody()
 
-            <footer>
-                
-            </footer>
-        </div>
+    <div class="container body-content">
+        @RenderBody()
 
-        <environment exclude="Development">
-            <!--se ejecutan al depurar-->
-            <script src="~/lib/jquery/jquery.js"></script>
-            <script src="~/lib/bootstrap/js/bootstrap.js"></script>
-            <script src="~/js/resume.js" asp-append-version="true"></script>
+        <footer></footer>
+    </div>
 
-            <!-- Bootstrap core JavaScript -->
-            <script src="~/lib/jquery/jquery.min.js"></script>
-            <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <environment include="Development">
+        <!--se ejecutan al depurar-->
+        <script src="~/lib/jquery/jquery.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+        <script src="~/js/resume.js" asp-append-version="true"></script>
 
-            <!-- Plugin JavaScript -->
-            <script src="~/lib/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="~/lib/jquery/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            <!-- Custom scripts for this template -->
-            <script src="js/resume.min.js"></script>
-        </environment>
+        <!-- Plugin JavaScript -->
+        <script src="~/lib/jquery-easing/jquery.easing.min.js"></script>
 
-        <environment include="Development">
-            <!--se ejecutan al Stagin o Produccion-->
-            <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
-                    asp-fallback-src="~/lib/jquery/jquery.min.js"
-                    asp-fallback-test="window.jQuery"
-                    crossorigin="anonymous"
-                    integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk"></script>
-            <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/4.1.1/bootstrap.min.js"
-                    asp-fallback-src="~/lib/bootstrap/js/bootstrap.min.js"
-                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                    crossorigin="anonymous"
-                    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"></script>
-            <script src="~/js/resume.min.js" asp-append-version="true"></script>
+        <!-- Custom scripts for this template -->
+        <script src="js/resume.min.js"></script>
+    </environment>
 
-            <!-- Bootstrap core JavaScript -->
-            <script src="~/lib/jquery/jquery.min.js"></script>
-            <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <environment exclude="Development">
+       <!--se ejecutan al depurar-->
+        <script src="~/lib/jquery/jquery.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+        <script src="~/js/resume.js" asp-append-version="true"></script>
 
-            <!-- Plugin JavaScript -->
-            <script src="~/lib/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="~/lib/jquery/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        </environment>
+        <!-- Plugin JavaScript -->
+        <script src="~/lib/jquery-easing/jquery.easing.min.js"></script>
 
-        @RenderSection("Scripts", required: false)
+        <!-- Custom scripts for this template -->
+        <script src="js/resume.min.js"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
     </body>
 </html>

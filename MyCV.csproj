@@ -15,7 +15,6 @@
   <ItemGroup>
     <Content Remove="wwwroot\js\site.js" />
     <Content Remove="wwwroot\css\resume.css" />
-    <Content Remove="wwwroot\css\resume.min.css" />
     <Content Remove="wwwroot\lib\bootstrap\.DS_Store" />
     <Content Remove="wwwroot\lib\bootstrap\css\bootstrap-grid.css" />
     <Content Remove="wwwroot\lib\bootstrap\css\bootstrap-grid.min.css" />
@@ -99,6 +98,9 @@
     <Content Remove="wwwroot\js\resume.min.js" />
     <Content Remove="wwwroot\js\resume.js" />
     <Content Remove="wwwroot\images\profile.png" />
+    <Content Remove="wwwroot\css\resume.min.css" />
+    <Content Remove="wwwroot\css\resume.min.css" />
+    <Content Remove="Views\Home\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\js\" />
@@ -106,7 +108,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\css\resume.css" />
-    <None Include="wwwroot\css\resume.min.css" />
     <None Include="wwwroot\lib\.DS_Store" />
     <None Include="wwwroot\lib\bootstrap\.DS_Store" />
     <None Include="wwwroot\lib\bootstrap\css\bootstrap-grid.css" />
@@ -119,27 +120,49 @@
     <None Include="wwwroot\lib\bootstrap\css\bootstrap.min.css.map" />
     <None Include="wwwroot\lib\bootstrap\js\bootstrap.bundle.js" />
     <None Include="wwwroot\lib\bootstrap\js\bootstrap.bundle.js.map" />
-    <None Include="wwwroot\lib\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap\js\bootstrap.bundle.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\lib\bootstrap\js\bootstrap.bundle.min.js.map" />
     <None Include="wwwroot\lib\bootstrap\js\bootstrap.js" />
     <None Include="wwwroot\lib\bootstrap\js\bootstrap.js.map" />
-    <None Include="wwwroot\lib\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\js\bootstrap.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\lib\bootstrap\js\bootstrap.min.js.map" />
     <None Include="wwwroot\lib\devicons\css\devicons.css" />
-    <None Include="wwwroot\lib\devicons\css\devicons.min.css" />
+    <None Include="wwwroot\lib\devicons\css\devicons.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\lib\devicons\css\devicons.scss" />
     <None Include="wwwroot\lib\devicons\fonts\devicons.eot" />
-    <None Include="wwwroot\lib\devicons\fonts\devicons.svg" />
-    <None Include="wwwroot\lib\devicons\fonts\devicons.ttf" />
-    <None Include="wwwroot\lib\devicons\fonts\devicons.woff" />
+    <None Include="wwwroot\lib\devicons\fonts\devicons.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\lib\devicons\fonts\devicons.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\lib\devicons\fonts\devicons.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\lib\font-awesome\css\font-awesome.css" />
-    <None Include="wwwroot\lib\font-awesome\css\font-awesome.min.css" />
+    <None Include="wwwroot\lib\font-awesome\css\font-awesome.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\lib\font-awesome\fonts\FontAwesome.otf" />
     <None Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.eot" />
-    <None Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.svg" />
-    <None Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <None Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff" />
-    <None Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\lib\font-awesome\less\animated.less" />
     <None Include="wwwroot\lib\font-awesome\less\bordered-pulled.less" />
     <None Include="wwwroot\lib\font-awesome\less\core.less" />
@@ -169,15 +192,21 @@
     <None Include="wwwroot\lib\font-awesome\scss\_variables.scss" />
     <None Include="wwwroot\lib\font-awesome\scss\font-awesome.scss" />
     <None Include="wwwroot\lib\jquery\jquery.js" />
-    <None Include="wwwroot\lib\jquery\jquery.min.js" />
+    <None Include="wwwroot\lib\jquery\jquery.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\lib\jquery\jquery.min.map" />
     <None Include="wwwroot\lib\jquery\jquery.slim.js" />
     <None Include="wwwroot\lib\jquery\jquery.slim.min.js" />
     <None Include="wwwroot\lib\jquery\jquery.slim.min.map" />
     <None Include="wwwroot\lib\jquery-easing\jquery.easing.compatibility.js" />
     <None Include="wwwroot\lib\jquery-easing\jquery.easing.js" />
-    <None Include="wwwroot\lib\jquery-easing\jquery.easing.min.js" />
-    <None Include="wwwroot\lib\simple-line-icons\css\simple-line-icons.css" />
+    <None Include="wwwroot\lib\jquery-easing\jquery.easing.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\lib\simple-line-icons\css\simple-line-icons.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\lib\simple-line-icons\fonts\Simple-Line-Icons.eot" />
     <None Include="wwwroot\lib\simple-line-icons\fonts\Simple-Line-Icons.svg" />
     <None Include="wwwroot\lib\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
@@ -185,8 +214,20 @@
     <None Include="wwwroot\lib\simple-line-icons\fonts\Simple-Line-Icons.woff2" />
     <None Include="wwwroot\lib\simple-line-icons\less\simple-line-icons.less" />
     <None Include="wwwroot\lib\simple-line-icons\scss\simple-line-icons.scss" />
-    <None Include="wwwroot\js\resume.min.js" />
+    <None Include="wwwroot\js\resume.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\js\resume.js" />
-    <None Include="wwwroot\images\profile.png" />
+    <None Include="wwwroot\images\profile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\css\resume.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="wwwroot\css\resume.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>
